@@ -12,7 +12,6 @@ end
 
 def current_player(board)
   turn_count(board)
-  turn_count(board).even? ? "X"
+  turn_count(board).even? ? "X" :
   turn_count(board).odd? ? "O" :
-    puts "No one has played a move yet"
 end
