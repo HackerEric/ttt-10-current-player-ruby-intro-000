@@ -9,3 +9,14 @@ def turn_count(board)
   end
   return counter
 end
+
+def current_player(board)
+  turn_count(board)
+  if turn_count.even?
+    return "X"
+  elsif turn_count.odd?
+    return "O"
+  else
+    puts "No one has played a move yet"
+  end
+end
